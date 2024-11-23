@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Corrigir Links do Twitter",
+  "version": "1.0",
+  "description": "Substitui links de X.com por Twitter.com automaticamente.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://www.ignboards.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.ignboards.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
